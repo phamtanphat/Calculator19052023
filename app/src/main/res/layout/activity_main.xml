@@ -19,6 +19,7 @@
         android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/edit_text_number_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -26,6 +27,7 @@
         android:inputType="number" />
 
     <EditText
+        android:id="@+id/edit_text_number_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -33,6 +35,7 @@
         android:inputType="number" />
 
     <TextView
+        android:id="@+id/text_view_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -50,11 +53,13 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/button_plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+" />
 
         <Button
+            android:id="@+id/button_minus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
@@ -69,11 +74,13 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/button_multiplication"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="*" />
 
         <Button
+            android:id="@+id/button_division"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
