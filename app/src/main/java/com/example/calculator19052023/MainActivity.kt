@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,10 +31,15 @@ class MainActivity : AppCompatActivity() {
         btnMultiplication = findViewById(R.id.button_multiplication)
         btnDivision = findViewById(R.id.button_division)
 
-        btnPlus.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
+//        btnPlus.setOnClickListener(object : View.OnClickListener {
+//            override fun onClick(p0: View?) {
+//
+//            }
+//        })
 
-            }
-        })
+        // Viết theo lambda
+        btnPlus.setOnClickListener {
+            Toast.makeText(this@MainActivity, "Click button plus", Toast.LENGTH_SHORT).show()
+        }
     }
 }
