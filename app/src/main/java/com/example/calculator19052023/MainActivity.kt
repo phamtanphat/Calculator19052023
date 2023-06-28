@@ -102,8 +102,13 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            val number1 = textNumber1.toInt()
-            val number2 = textNumber2.toInt()
+            val number1 = textNumber1.toFloat()
+            val number2 = textNumber2.toFloat()
+
+            if (number2 == 0.0f) {
+                Toast.makeText(this@MainActivity, "Not divide by zero", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
 
             val total = number1 / number2
             val outPut = "Result: $number1 / $number2 = $total"
