@@ -44,8 +44,16 @@ class MainActivity : AppCompatActivity() {
 
             // Check value not empty
             if (textNumber1.isEmpty() || textNumber2.isEmpty()) {
+                Toast.makeText(this@MainActivity, "Input invalid", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+
+            val number1 = textNumber1.toInt()
+            val number2 = textNumber2.toInt()
+
+            val total = number1 + number2
+            val outPut = "Result: $number1 + $number2 = $total"
+            tvResult.text = outPut
         }
     }
 }
