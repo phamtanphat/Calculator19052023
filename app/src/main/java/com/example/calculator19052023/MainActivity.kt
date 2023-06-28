@@ -54,6 +54,8 @@ class MainActivity : AppCompatActivity() {
             val total = number1 + number2
             val outPut = "Result: $number1 + $number2 = $total"
             tvResult.text = outPut
+            edtNumber1.setText("")
+            edtNumber2.setText("")
         }
 
         btnMinus.setOnClickListener {
@@ -72,6 +74,8 @@ class MainActivity : AppCompatActivity() {
             val total = number1 - number2
             val outPut = "Result: $number1 - $number2 = $total"
             tvResult.text = outPut
+            edtNumber1.setText("")
+            edtNumber2.setText("")
         }
 
         btnMultiplication.setOnClickListener {
@@ -90,6 +94,8 @@ class MainActivity : AppCompatActivity() {
             val total = number1 * number2
             val outPut = "Result: $number1 * $number2 = $total"
             tvResult.text = outPut
+            edtNumber1.setText("")
+            edtNumber2.setText("")
         }
 
         btnDivision.setOnClickListener {
@@ -113,6 +119,8 @@ class MainActivity : AppCompatActivity() {
             val total = number1 / number2
             val outPut = "Result: $number1 / $number2 = $total"
             tvResult.text = outPut
+            edtNumber1.setText("")
+            edtNumber2.setText("")
         }
     }
 }
