@@ -39,7 +39,13 @@ class MainActivity : AppCompatActivity() {
 
         // Viết theo lambda
         btnPlus.setOnClickListener {
-            Toast.makeText(this@MainActivity, "Click button plus", Toast.LENGTH_SHORT).show()
+            val textNumber1 = edtNumber1.text.toString()
+            val textNumber2 = edtNumber2.text.toString()
+
+            // Check value not empty
+            if (textNumber1.isEmpty() || textNumber2.isEmpty()) {
+                return@setOnClickListener
+            }
         }
     }
 }
